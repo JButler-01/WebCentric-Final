@@ -14,8 +14,6 @@ Run the server using
 
 **node server.js**
 
-# SIDE NOTE:
 
-I COULD NOT MAKE EDIT WORK, the put request is there along with some javascript but it does not work
 
 

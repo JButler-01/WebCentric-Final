@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <div></div>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="style.css">
+   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        
+        
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="index.js"></script>
+        
+        
+    </head>
+    
+    <body style = "background-color: bisque;">
+        <div class="header"><h1>Media Database</h1></div>
+        
+        <div class="container" style="float:center;">
+            <div class="dropdown" style="float:center;">
+                <button class="dropbtn" type="button" onclick="drop()">ADD</button>
+                <div id="myDropdown" class="dropdown-content" style="padding: 10px;">
+                    <p>Add new:</p>   
+                    Title <input type="text" id="media_name"> 
+                    Type <input type="text" id="type"> 
+                    Genre <input type="text" id="genre"> 
+                    Length <input type="text" id="length"> 
+                    Release Date <input type="text" id="release_date"> 
+                    Media Photo<input type="text" id="pic"> 
+                    <input class="btn" type="button" onclick="addMedia()" value="save">
+                </div>
+    
+            </div>
+        </div>
+        
+        
+    
+
+        <div class="container">
+
+
+            <table class='table'>
+                <thead class='table_head'>
+                    <tr>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Genre</th>
+                        <th>Length</th>
+                        <th>Release Date</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="table_body" id="table_body">
+
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>
